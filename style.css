@@ -132,10 +132,8 @@ button {
 /* ============== UI ============== */
 
 #game_ui {
-  position: absolute;
   font-size: 5vw;
-  top: 5vw;
-  right: 2vw;
+
   color: white;
 
   pointer-events: none;
@@ -144,13 +142,13 @@ button {
 /* ============== points, lives and timer ============== */
 
 #score_board {
+  position: absolute;
   display: grid;
   grid-template-columns: 1vw 2vw;
-  justify-items: end;
   align-items: center;
 
   top: 2vw;
-  right: 1vw;
+  right: 2.5vw;
 }
 
 #point_count {
@@ -161,17 +159,14 @@ button {
 #life_board {
   position: absolute;
   display: grid;
-
-  grid-template-rows: 5vw 5vw 5vw;
-  margin-block-start: 1vw;
+  top: 7.5vw;
+  left: 93.6vw;
+  width: 12vw;
+  grid-template-rows: 6vw 6vw 6vw;
 }
 
 #life_board img {
-  width: 200%;
-}
-
-#time_board {
-  position: relative;
+  width: 40%;
 }
 
 #time_container {
@@ -181,8 +176,8 @@ button {
   aspect-ratio: 9/50;
   border: 2px solid pink;
   background-color: grey;
-  top: 10vw;
-  right: 0.2vw;
+  top: 25vw;
+  right: 1vw;
 }
 
 #time_sprite {
